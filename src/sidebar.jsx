@@ -65,6 +65,17 @@ const Sidebar = () => {
 
 
         </div>
+
+
+        <div className='p-6 py-5'>
+        <NavLink to={"/new-feature"} className={({isActive}) => `text-white font-semibold  text-[1rem] flex gap-3 items-center p-2.5 rounded-sm border border-transparent hover:border-[#509CDB] ${isActive ? "bg-[#509CDB]":"bg-transparent"}`}>
+            <div className='text-[18px]'>
+            <RiBankLine />
+            </div>
+                <span>Features</span>
+                <span className='text-[#000000] text-[10px] p-0.5 rounded-lg bg-[#B9D7F1]'>NEW</span>
+            </NavLink>
+        </div>
     </aside>
   )
 }

@@ -9,6 +9,7 @@ import Teachers from './routes/teachers'
 import Profile from './routes/profile'
 import Billing from './routes/billing'
 import Exam from './routes/exam'
+import Newfeature from './routes/new'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/profile' element={<Profile />} />
         <Route path='/billing' element={<Billing />} />
         <Route path='/exam' element={<Exam />} />
+        <Route path='/new-feature' element={<Newfeature />} />
       </Route>
     </Routes>
       
