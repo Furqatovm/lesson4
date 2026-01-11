@@ -10,6 +10,7 @@ import Profile from './routes/profile'
 import Billing from './routes/billing'
 import Exam from './routes/exam'
 import Newfeature from './routes/new'
+import AddTeachers from './routes/addteacher'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/billing' element={<Billing />} />
         <Route path='/exam' element={<Exam />} />
         <Route path='/new-feature' element={<Newfeature />} />
+        <Route path='/teachers/add-teacher' element={<AddTeachers />} />
       </Route>
     </Routes>
       

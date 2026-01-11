@@ -19,8 +19,10 @@ const Layout = () => {
             <span className='text-[#424242] text-[14px] font-semibold'>Log out</span>
             </div>
         </div>
+        <div className='w-[90%] mx-auto'>
 
        <Outlet />
+        </div>
        </div>
         
     </section>
