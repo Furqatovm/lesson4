@@ -1,9 +1,10 @@
 import { Button, Input } from 'antd'
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import UsersTable from './table'
 
 const Teachers = () => {
+  const [InputValue, setInputValue] =useState("");
   return (
     <div>
         <div className='flex justify-between py-4'>
@@ -14,10 +15,10 @@ const Teachers = () => {
             </Button>
             </NavLink>
         </div>
-        <Input type={"search"} placeholder={`Search for a teachers by name or email`} />
+        <Input value={InputValue} onChange={(e) =>setInputValue(e.target.value)} type={"search"} placeholder={`Search for a teachers by name or email`} />
 
      <div className='py-8'>
-     <UsersTable />
+     <UsersTable searchItem ={InputValue} />
      </div>
     </div>
   )
