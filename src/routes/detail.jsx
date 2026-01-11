@@ -15,7 +15,7 @@ const Detail = () => {
                     </div>
                     <div className='flex flex-col gap-1 items-center'>
                         <span className='text-[1rem] font-bold text-[#1A1A1A]'>{teacher.fullName}</span>
-                        <span className='text-[#4F4F4F] text-[12px] font-medium'>tim.jennings@example.com</span>
+                        <span className='text-[#4F4F4F] text-[12px] font-medium'>{teacher.email}</span>
                     </div>
                     <div className='flex gap-4'>
                         <button className='p-3 rounded-lg bg-[#EFF3FA]'>
