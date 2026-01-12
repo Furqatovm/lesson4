@@ -10,18 +10,18 @@ const Layout = () => {
     const [mobile,setMobile] =useState(false);
   return (
     <section className='flex'>
-        <div className={`${mobile ? 'min-w-60.25': ""} bg-[#152259] h-screen fixed  -translate-x-full
+        <div className={`${mobile ? 'min-w-60.25 ': ""} bg-[#152259] h-screen fixed   -translate-x-full
           transition-transform ${mobile ? 'translate-x-0':''} `}>
             
             <Sidebar />
             {/*  w-[calc(100%-15rem)] */}
         </div>
-       <div className={`p-3   w-[calc(100%-15rem)] ${mobile ? "ml-60": "ml-2 w-full"} `}>
+       <div className={`p-3   w-[calc(100%-15rem)]  ${mobile ? "ml-60 ": "ml-2 w-full"} `}>
         <div className='w-[95%] mx-auto flex justify-between items-center'> 
 
             <button
             onClick={() => setMobile(!mobile)}
-            className="text-[26px] text-red-500"
+            className="text-[26px] text-[#152259]"
           >
             <HiMenuAlt2 />
           </button>
