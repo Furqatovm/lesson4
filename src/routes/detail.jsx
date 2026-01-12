@@ -6,8 +6,8 @@ const Detail = () => {
     const {id} =useParams();
     const teacher =teachers.find((t) =>t.id ==+id)
   return (
-    <section className='w-[70%] mx-auto my-10'>
-            <div className='flex justify-between items-center gap-15'>
+    <section className='w-[70%] max-md:w-[90%] mx-auto my-10'>
+            <div className='flex justify-between items-center gap-15 max-md:flex-col max-md:gap-4'>
                 <div className="left flex flex-col gap-4 items-center">
                     <div className='w-70 h-70 '>
 

@@ -10,7 +10,7 @@ const columns = [
         render: (_, record) => (
             <div className="flex items-center gap-3">
               <Avatar src={record.img} size={32} />
-              <span className="font-medium">{record.fullName}</span>
+              <span className="font-medium max-md:text-[12px]!">{record.fullName}</span>
             </div>
           ),
       },
@@ -50,7 +50,7 @@ const UsersTable = ({searchItem}) => {
         val.email.includes(searchItem.toLowerCase())||
         val.subject.includes(searchItem.toLowerCase())
     )
-  return <Table  columns={columns} dataSource={filteredData} pagination={false} 
+  return <Table className='max-md:overflow-x-auto scrol-hidden'  columns={columns} dataSource={filteredData} pagination={false} 
   rowKey="id"
       // Qator ustiga bosilganda navigate qilish
       onRow={(record) => ({

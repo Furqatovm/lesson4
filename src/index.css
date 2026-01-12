@@ -3,3 +3,8 @@
 *,html{
   transition: all 0.2s linear;
 }
+
+
+.scrol-hidden::-webkit-scrollbar{
+  display: none;
+}
